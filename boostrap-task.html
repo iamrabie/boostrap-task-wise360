@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>
+          Boostrap
+       </title>
+       <link href="./bootstrap-task.css" rel="stylesheet"/>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+       <script src="https://kit.fontawesome.com/93a0035de3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    
+    <div class="container-fluid d-flex flex-column">
+     <!--  header of the web page -->
+      <header class="d-flex flex-column">
+
+        <!--   DIV 1 -->
+        <div class="header-message text-white text-center">
+            There's a newer version of Boostrap!
+        </div>
+
+        <!--  DIV 2 -->
+        <div class="navbar-div">
+          <!--   navbar starts here -->
+          <nav class="mx-auto d-flex justify-content-between">
+            <!--  menu items :list 1 -->
+            <div class="menu-1 d-flex align-self-center">
+             <a href="#" class="ps-2 pe-2 text-white"><i class="fa-brands fa-bootstrap"></i></a>
+             <ul class="list-1 d-flex d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+               <li><a href="#" class="ps-2 pe-2 text-white">Home</a></li>
+               <li><a href="#" class="ps-2 pe-2 text-white">Docs</a></li>
+               <li><a href="#" class="ps-2 pe-2 text-white">Examples</a></li>
+               <li><a href="#" class="ps-2 pe-2 text-white">Icons</a></li>
+               <li><a href="#" class="ps-2 pe-2 text-white">Themes</a></li>
+               <li><a href="#" class="ps-2 pe-2 text-white">Blogs</a></li>
+             </ul>
+            </div>
+
+              <!--  menu items :list 2 -->
+            <div class="menu-2 d-flex">
+             <ul class="list-2 d-flex align-self-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+                <li><a href="#" class="ps-2 pe-2 text-white"><i class="fa-brands fa-github">1</i></a></li>
+                <li><a href="#" class="ps-2 pe-2 text-white"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="ps-2 pe-2 text-white"><i class="fa-regular fa-circle"></i></a></li>
+             </ul>
+             <a href="#" class="rounded-2 fw-bold a-btn text-decoration-none d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">Download</a>
+             <div class='menuIcon align-self-center'>
+              <div class='bar1'></div>
+              <div class='bar2'></div>
+              <div class='bar3'></div>
+             </div>
+            </div>
+          </nav>
+        </div>
+
+        <!-- DIV 3 -->
+        <div style="border:1px solid lightgray;" class="shadow-lg">
+            <div class="search-nd-select-div mx-auto d-flex justify-content-between">
+               <input type="text" placeholder="Search docs..." class="ps-3 py-auto my-auto"/>
+               <select class="my-auto">
+                  <option selected><span class="select-option">Boostrap v5.0</span></option>
+                  <option class="text-muted">v5 releases</option>
+                  <option class="text-muted">Latest</option>
+                  <option class="text-muted">v5.1.3</option>
+                  <option class="text-muted">v5.0.2</option>
+                  <option class="text-muted">v4.4.x</option>
+                  <option class="text-muted">v5.0.2</option>
+                  <option class="text-muted">v5.3.2</option>
+               </select>
+            </div>
+        </div>
+      </header>
+      <!--  header ends here -->
+
+
+      <!--    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+      <!--    CONTENT DIV -->
+      <div class="container-fluid mb-5">
+        <div class="row m-auto pt-5">
+
+        <!--  col 1 -->
+          <div class="col-md-2 ps-3 pe-0 overflow-auto d-flex flex-column d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block" style="height:76vh">
+            <ul class="list-unstyled mt-1 left-menu">
+              <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="displayGS()">
+                   Getting started
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="gettingStarted">
+                    <li>Introduction</li>
+                    <li>Download</li>
+                    <li>Contents</li>
+                    <li>Browsers & devices</li>
+                    <li>JavaScript</li>
+                    <li>Build ools</li>
+                    <li>Webpack</li>
+                    <li>Parcel</li>
+                    <li>Accessibility</li>
+                    <li>RFS</li>
+                    <li>RTL</li>
+                   </ul>
+               </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="displayCustom()">
+                    Customize
+                  </a>
+                  <ul class="list-unstyled small text-muted left-menu-li none" id="customize">
+                    <li>Overview</li>
+                    <li>Sass</li>
+                    <li>Options</li>
+                    <li>Color</li>
+                    <li>Compoents</li>
+                    <li>CSS variables</li>
+                    <li>Optimize</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold " onclick="displayLO()">
+                    Layout
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="layout">
+                    <li>Breakpoints</li>
+                    <li>Containers</li>
+                    <li>Grid</li>
+                    <li>Columns</li>
+                    <li>Gutters</li>
+                    <li>Utilities</li>
+                    <li>Z-Index</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="display_Content()">
+                    Content
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="content">
+                    <li>Reboot</li>
+                    <li>Typography</li>
+                    <li>Images</li>
+                    <li>Tables</li>
+                    <li>Figures</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="display_Forms()">
+                    Forms
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="forms">
+                    <li>Overview</li>
+                    <li>Form Control</li>
+                    <li>Select</li>
+                    <li>Checks & radios</li>
+                    <li>Range</li>
+                    <li>Input Group</li>
+                    <li>Floating Tables</li>
+                    <li>Layouts</li>
+                    <li>Validation</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="display_Components()">
+                    Components
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="components">
+                    <li>Accordion</li>
+                    <li>Alerts</li>
+                    <li>Badge</li>
+                    <li>Breadcrumb</li>
+                    <li>Buttons</li>
+                    <li>Button Group</li>
+                    <li>Card</li>
+                    <li>Carousel</li>
+                    <li>Close button</li>
+                    <li>Collapse</li>
+                    <li>Dropdowns</li>
+                    <li>List Group</li>
+                    <li>Modal</li>
+                    <li>Navs & tabs</li>
+                    <li>Navbar</li>
+                    <li>Offcanvas</li>
+                    <li>Pagination</li>
+                    <li>Popovers</li>
+                    <li>Progress</li>
+                    <li>Scrollspy</li>
+                    <li>Sinners</li>
+                    <li>Toasts</li>
+                    <li>Tooltips</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold " onclick="display_Helpers()">
+                    Helpers
+                  </a>
+                  <ul class="list-unstyled small  text-muted none left-menu-li" id="helpers">
+                    <li>Clearfix</li>
+                    <li>Colured links</li>
+                    <li>Ratio</li>
+                    <li>Position</li>
+                    <li>Visually hidden</li>
+                    <li>Stretched link</li>
+                    <li>text truncation</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="display_Utilities()">
+                    Utilities
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="utilities">
+                    <li>API</li>
+                    <li>Background</li>
+                    <li>Borders</li>
+                    <li>Colors</li>
+                    <li>Display</li>
+                    <li>Flex</li>
+                    <li>FLoat</li>
+                    <li>Interactions</li>
+                    <li>Overflow</li>
+                    <li>Position</li>
+                    <li>Shadow</li>
+                    <li>Sizing</li>
+                    <li>Spacing</li>
+                    <li>Text</li>
+                    <li>Vertical Align</li>
+                    <li>Visibility</li>
+                    </ul>
+                  </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold " onclick="display_Extend()">
+                    Extend
+                  </a>
+                  <ul class="list-unstyled small none text-muted left-menu-li" id="extend">
+                    <li>Approach</li>
+                    <li>Icons</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" class="text-decoration-none text-muted left-menu-list fw-bold" onclick="display_About()">
+                    About
+                  </a>
+                  <ul class="list-unstyled small text-muted none left-menu-li" id="about">
+                    <li>Overview</li>
+                    <li>Team</li>
+                    <li>Brand</li>
+                    <li>Licence</li>
+                    <li>Translations</li>
+                  </ul>
+                </li>
+
+               </ul>
+               <div id="migration">
+                 <hr>
+                 <p class="text-muted" style="text-indent: 12px;font-size: 18px;">Migration</p>
+               </div>
+          </div>
+
+
+          <!-- COLUMN 2 -->
+          <div class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 d-flex m-auto ps-0 pe-0 overflow-auto mt-0 mb-2 pb-2" style="height:100vh">
+            <div class=" mx-auto d-flex flex-column content-container">
+                <div class="d-flex justify-content-between">
+                  <p class="h1 p-0 fw-semibold">Text</p>
+                  <a href="#" class="h-25 align-self-center border border-1-muted text-decoration-none small p-2 text-secondary">View on GitHub</a>
+                </div>
+                <p class="fs-4 fw-light pt-1">Automatically update Bootstrap navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p>
+                <p class="h3 pt-3">How it works</p>
+                <p class="pb-2 mb-0">Scrollspy has a few requirements to function properly:</p>
+                <ul>
+                  <li>It must be used on a boostrap nav component or list group</li>
+                  <li>Scrollspy required position : relative; on the element you are spying on, usually the body</li>
+                  <li>anchors are required and must point to an element with an id</li>
+                </ul>
+                <p>
+                  When successfully implemented, your nav or list group will update accordingly, moving the 
+                  .active class from one item to the next based on their associated targets.
+                </p>
+
+                <div class="jumbotron jumbotron-fluid d-flex flex-column mt-1 ps-4 pt-3 pb-1"
+                      style="border-left:6px solid lightseagreen; border-right:1px solid lightgray; border-top:1px solid lightgray; border-bottom:1px solid lightgray">
+                <p class="h3">Scrollable containers and keyboard access</p>
+                <p class="fs-6">If you’re making a scrollable container (other than the body), be sure to have a height set and overflow-y: scroll; applied to it—alongside 
+                   a tabindex="0" to ensure keyboard access.
+                </p>
+                </div>
+
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+
+                <div class="bg-light pt-4 pb-4 ps-3 pe-3 small">
+                  This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+                  the appropriate navigation link is highlighted. It's repeated throughout 
+                  the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+                  This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+                  the appropriate navigation link is highlighted. It's repeated throughout 
+                  the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+                  This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 
+                  the appropriate navigation link is highlighted. It's repeated throughout 
+                  the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.
+                </div>
+
+                
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+
+                <p class="h3 pt-3">How it works</p>
+                <p class="pb-2 mb-0">Scrollspy has a few requirements to function properly:</p>
+                <ul>
+                  <li>It must be used on a boostrap nav component or list group</li>
+                  <li>Scrollspy required position : relative; on the element you are spying on, usually the body</li>
+                  <li>anchors are required and must point to an element with an id</li>
+                </ul>
+
+                
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+
+                <p class="h3 pt-3">How it works</p>
+                <p class="pb-2 mb-0">Scrollspy has a few requirements to function properly:</p>
+                <ul>
+                  <li>It must be used on a boostrap nav component or list group</li>
+                  <li>Scrollspy required position : relative; on the element you are spying on, usually the body</li>
+                  <li>anchors are required and must point to an element with an id</li>
+                </ul>
+
+                
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+
+                <p class="h3 pt-3">How it works</p>
+                <p class="pb-2 mb-0">Scrollspy has a few requirements to function properly:</p>
+                <ul>
+                  <li>It must be used on a boostrap nav component or list group</li>
+                  <li>Scrollspy required position : relative; on the element you are spying on, usually the body</li>
+                  <li>anchors are required and must point to an element with an id</li>
+                </ul>
+                
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+
+                <p class="h3 pt-3">How it works</p>
+                <p class="pb-2 mb-0">Scrollspy has a few requirements to function properly:</p>
+                <ul>
+                  <li>It must be used on a boostrap nav component or list group</li>
+                  <li>Scrollspy required position : relative; on the element you are spying on, usually the body</li>
+                  <li>anchors are required and must point to an element with an id</li>
+                </ul>
+
+                
+                <p class="h3 pt-5">Example in Navbar</p>
+                <p class="fs-6">
+                  Scroll the area below the navbar and watch the active class change. The dropdown items will be highlighted as well.
+                </p>
+
+                <p class="h3 pt-3">Example with nested nav</p>
+                <p class="fs-6">
+                    Scrollspy also works with nested .navs. If a nested .nav is .active, its parents will also be .active.
+                    Scroll the area next to the navbar and watch the active class change.
+                </p>
+           </div>
+
+          </div>
+         <!--  COLUMN 2 ENDS HERE -->
+
+
+         <!-- COLUMN 3 -->
+          <div class="col-12 col-sm-12 col-lg-2 col-xl-2 d-md-none d-lg-block d-xl-block d-xxl-block">
+            <p class="h6 pt-2 ps-1">On this Page</p>
+            <hr style="border:1px solid lightgray" class="mt-0 mb-2"/>
+              <ul class="list-unstyled on-this-page-list">
+                  <li>
+                    <a href="#">How it works</a>
+                  </li>
+                  <li>
+                    <a href="#">Example in navbar</a>
+                  </li>
+                  <li>
+                    <a href="#">Example with nested nav</a>
+                  </li>
+                  <li>
+                    <a href="#">Example with list-group</a>
+                  </li>
+                  <li>
+                    <a href="#">Usage</a>
+                  </li>
+                  <ul class="on-this-page-list on-this-page-subList">
+                    <li>
+                      <a href="#">Via data attributes</a>
+                    </li>
+                    <li>
+                      <a href="#">Via JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">Methods</a>
+                    </li>
+                    <ul class="on-this-page-list on-this-page-subList">
+                      <li>
+                        <a href="#">refresh</a>
+                      </li>
+                      <li>
+                        <a href="#">dispose</a>
+                      </li>
+                      <li>
+                        <a href="#">getInstance</a>
+                      </li>
+                      <li>
+                        <a href="#">getOrCreateInstance</a>
+                      </li>
+                    </ul>
+                  <li>
+                    <a href="#">Options</a>
+                  </li>
+                  <li>
+                    <a href="#">Events</a>
+                  </li>
+                </ul>
+             </ul>
+         </div>
+                    
+        <!-- column 3 nds here -->
+      
+         </div>
+      </div>
+
+    <!--   CONTENT DIV ENDS -->
+
+
+      <!--  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+
+      <!-- FOOTER SECTION -->
+      <div class="container-fluid footer-div">
+         <div class="row footer-row mx-auto">
+
+            <!-- COLUMN 1 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex flex-column mb-3">
+               <div class="footer-col1-content">
+                  <div class="title d-flex">
+                     <i class="fa-brands fa-bootstrap"></i>
+                     <p class="h4 fw-light">Bootstrap</p>
+                  </div>
+                  <p class="text mb-2" style="width:85%;line-height:22px;">Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+                  <p class="text mb-2">Code licensed MIT, docs CC BY 3.0.</p>
+                  <p class="text mb-2">Currently v5.0.2.</p>
+                  <p class="text mb-2">Analytics by Fathom.</p>
+               </div>
+            </div>
+
+            <!-- COLUMN 2 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex p-0 mb-3">
+              <!-- LINKS LIST -->
+              <div class="links-div d-flex flex-column">
+                <p class="h5 footer-2-header mb-1">Links</p>
+                <ul class="footer-2-lists">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Examples</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Swag Store</a></li>
+                </ul>
+              </div>
+              <!-- GUIDE LIST -->
+              <div class="guide-div d-flex flex-column">
+                <p class="h5 footer-2-header mb-1">Guides</p>
+                <ul class="footer-2-lists">
+                   <li><a href="#">Getting started</a></li>
+                   <li><a href="#">Starter template</a></li>
+                   <li><a href="#">Webpack</a></li>
+                   <li><a href="#">Parcel</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 d-flex p-0 mb-3">
+              <!-- LINKS LIST -->
+              <div class="projects-div d-flex flex-column">
+                <p class="h5 mb-1 footer-3-header">Projects</p>
+                <ul class="footer-3-lists">
+                    <li><a href="#">Bootstrap 5</a></li>
+                    <li><a href="#">Bootstrap 4</a></li>
+                    <li><a href="#">Icons</a></li>
+                    <li><a href="#">RFS</a></li>
+                    <li><a href="#">npm starter</a></li>
+                </ul>
+              </div>
+              <!-- GUIDE LIST -->
+              <div class="community-div d-flex flex-column">
+                <p class="h5 mb-1 footer-3-header">Community</p>
+                <ul class="footer-3-lists">
+                  <li><a href="#">Issues</a></li>
+                  <li><a href="#">Discussions</a></li>
+                  <li><a href="#">Corporate Sponsors</a></li>
+                  <li><a href="#">Open Collective</a></li>
+                  <li><a href="#">Stack Overflow</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./scripts.js">
+
+    </script>
+    </body>
+</html>
